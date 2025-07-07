@@ -15,7 +15,7 @@ jobs:
           unzip -P my-little-secret export.zip
       - run: |
           cd export
-          conda run voici export.ipynb
+          conda run voici build --contents .
       - run: |
           ls -lah
           ls -lah export
