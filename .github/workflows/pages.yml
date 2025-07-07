@@ -5,15 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: conda-incubator/setup-miniconda@v3
-        with:
-          auto-activate-base: true
-          python-version: "3.12"
-      - run: |
-          conda install -c conda-forge voici
+      # - uses: conda-incubator/setup-miniconda@v3
+      #   with:
+      #     auto-activate-base: true
+      #     python-version: "3.12"
+      # - run: |
+      #     conda install -c conda-forge voici
       - run: |
           unzip -P my-little-secret export.zip
-      - run: |
-          voici export.ipynb
+      # - run: |
+      #     voici export.ipynb
       - run: |
           ls -lah
