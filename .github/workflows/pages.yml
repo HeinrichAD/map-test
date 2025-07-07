@@ -12,9 +12,6 @@ jobs:
       - run: |
           conda install -c conda-forge voici
       - run: |
-          apt-get update
-          apt-get install -y unzip
-      - run: |
           unzip -P my-little-secret export.zip
       - run: |
           voici export.ipynb
