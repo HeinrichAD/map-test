@@ -20,7 +20,7 @@ jobs:
           ls -lah
           ls -lah export
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: export/_output
 
